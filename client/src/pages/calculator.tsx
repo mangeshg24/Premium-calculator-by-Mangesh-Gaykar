@@ -156,6 +156,15 @@ export default function CalculatorPage() {
     return value.toFixed(decimals);
   };
 
+  const handleReset = () => {
+  setEntryPrice("");
+  setExitPrice("");
+  setNumberOfLots("1");
+  setStopLossPrice("");
+  setResult(null);
+};
+
+
   return (
     <div className="min-h-screen w-full flex items-center justify-center p-4 md:p-6 lg:p-8 relative overflow-hidden bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364]">
       <div className="fixed inset-0 z-0 opacity-30 pointer-events-none">
@@ -178,7 +187,7 @@ export default function CalculatorPage() {
               </h1>
             </div>
             <p className="text-white/60 text-xs md:text-sm" data-testid="text-subtitle">
-              Premium calculator for Indian derivatives market
+              Premium calculator by Mangesh Gaykar
             </p>
           </div>
 
@@ -339,6 +348,13 @@ export default function CalculatorPage() {
                   }`}
                   data-testid="card-results"
                 >
+                  <Button
+  onClick={handleReset}
+  className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 rounded-lg transition-all duration-300 shadow-md hover:shadow-red-500/30"
+>
+  RESET
+</Button>
+
                   <div className="text-center pb-4 border-b border-white/10">
                     <p className="text-white/50 text-xs uppercase tracking-wider mb-2">
                       Profit / Loss
@@ -433,5 +449,6 @@ export default function CalculatorPage() {
         </div>
       </Card>
     </div>
+
   );
 }
