@@ -1,0 +1,148 @@
+Build a fully responsive, modern web application named “Option Scalper Calculator – India” with the following requirements:
+
+🎨 1. UI / Design Requirements (Premium Look)
+
+Create a landscape-style layout on desktop with left panel (inputs) and right panel (results).
+Use glassmorphism + modern neon glow effects:
+
+A large glass card container with:
+
+blur background
+
+rounded corners (20px)
+
+deep soft drop shadow
+
+inner glow effects
+
+Use a premium gradient background like:
+
+linear-gradient(135deg, #0f2027, #203a43, #2c5364)
+
+
+Inputs and dropdowns must have:
+
+Fixed equal width
+
+Rounded corners (14px)
+
+Glow on focus (neon effect)
+
+Smooth scale animation on focus
+
+Buttons must have:
+
+Gradient colors
+
+Hover glow
+
+Scale animation
+
+Rounded corners
+
+The UI must be:
+
+Clean
+
+Premium
+
+Trading-dash style
+
+Fully mobile responsive
+
+Auto-stack vertically on small screens
+
+🧮 2. Calculation Features
+
+Implement a complete option calculation engine:
+
+Inputs
+
+Instrument dropdown
+
+Lot size (auto-filled)
+
+Entry price
+
+Exit price
+
+Number of lots
+
+Optional stop-loss price
+
+Lot Sizes (current contracts)
+NIFTY: 75
+BANKNIFTY: 35
+FINNIFTY: 65
+MIDCPNIFTY: 140
+NIFTYNEXT50: 25
+SENSEX: 20
+
+Outputs
+
+Show the following in a premium animated result card:
+
+Points Captured
+
+Profit / Loss
+
+Capital Required
+
+ROI %
+
+Breakeven Price
+
+Stop-loss Risk (always red & bold)
+
+Profit Animation
+
+The “Profit / Loss” number must animate from 0 → final value using requestAnimationFrame.
+
+⚡ 3. Quick Profit Preview Buttons
+
+Add 4 buttons:
+
++1   +2   +5   +10  (points)
+
+
+When clicked:
+
+Auto-fill exit price = entry + selected points
+
+Recalculate results instantly
+
+📱 4. Responsive Design Requirements
+
+On desktop → 2-panel landscape layout
+
+On mobile → auto-stack into a single column
+
+All elements must smoothly resize
+
+🔥 5. Result Card Requirements
+
+Must show color-coded results:
+
+Green background for profit
+
+Red background for loss
+
+Stop-loss Risk must always be bold red
+
+Card must have rounded corners + inner shadow
+
+🧩 6. Code Requirements
+
+Use pure HTML, CSS, JavaScript (no frameworks)
+
+Use clean modular JS functions
+
+No external libraries
+
+Final code must be fully working and include:
+
+correct UI
+
+correct animations
+
+correct calculations
